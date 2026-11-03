@@ -6,7 +6,7 @@ export function About() {
     <section id="about" aria-labelledby="about-title" className="px-5 py-16 lg:px-20 lg:py-24">
       <p className="t-tag">Malate Call Center</p>
       <h2 id="about-title" className="t-section mt-3">
-        John Wilson Malate Jr.
+        John Wilson Malate
       </h2>
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
         <p className="max-w-[460px] text-[20px] leading-[1.5] text-strong">{aboutText}</p>

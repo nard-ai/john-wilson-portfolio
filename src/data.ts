@@ -5,7 +5,7 @@ export const headlines = ['Live Support', 'Call Center', 'Client Care', 'Phone C
 export const statements = [
   {
     title: 'Malate Call Center',
-    body: 'John Wilson Malate Jr. leads live phone support for businesses that need a person on the line.',
+    body: 'John Wilson Malate leads live phone support for businesses that need a person on the line.',
   },
   {
     title: 'Inbound and outbound',
@@ -124,7 +124,7 @@ export const filterMap: Record<Filter, number[]> = {
 }
 
 export const aboutText =
-  'John Wilson Malate Jr. directs Malate Call Center. The team answers calls, records the request, and reports the outcome.'
+  'John Wilson Malate directs Malate Call Center. The team answers calls, records the request, and reports the outcome.'
 
 export const aboutClose = 'A person answers. You get the note.'
 
