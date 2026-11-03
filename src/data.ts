@@ -5,7 +5,7 @@ export const headlines = ['Live Support', 'Call Center', 'Client Care', 'Phone C
 export const statements = [
   {
     title: 'Malate Call Center',
-    body: 'John Wilson Malate leads live phone support for businesses that need a person on the line.',
+    body: 'John Wilson Malate is based in Landayan, San Pedro, Laguna. He speaks Tagalog, English, and Waray.',
   },
   {
     title: 'Inbound and outbound',
@@ -124,15 +124,28 @@ export const filterMap: Record<Filter, number[]> = {
 }
 
 export const aboutText =
-  'John Wilson Malate directs Malate Call Center. The team answers calls, records the request, and reports the outcome.'
+  'From Landayan, San Pedro, Laguna. He speaks Tagalog, English, and Waray. His work is production at PHILFOODS, material handling at ACLEM Corp., and warehouse work at Ftech. He wants a team where he can develop his skills and grow.'
 
-export const aboutClose = 'A person answers. You get the note.'
+export const aboutClose =
+  'Bilingual, open-minded, dependable, and organized. He values integrity, adaptability, critical thinking, and a willingness to learn.'
+
+export const contact = {
+  address: 'Purok 5, Aplaya Vierneza St., Landayan, San Pedro, Laguna',
+  phone: '09923209643',
+  phoneHref: 'tel:+639923209643',
+  email: 'wilsonmalate241@gmail.com',
+  emailHref: 'mailto:wilsonmalate241@gmail.com',
+}
+
+export const resumeFile = '/John-Wilson-Malate-Resume.pdf'
 
 export const timeline = [
-  { years: 'Weekdays.', line: 'The phones are open through the business day.' },
-  { years: 'After hours.', line: 'Someone still picks up when you are closed.' },
-  { years: 'Your words.', line: 'The team says the greeting and the answers you approve.' },
-  { years: 'The note.', line: 'You hear who called and what they needed.' },
+  { years: 'PHILFOODS.', line: 'Production worker.' },
+  { years: 'ACLEM Corp.', line: 'Material handler.' },
+  { years: 'Ftech.', line: 'Warehouse man.' },
+  { years: '2021 to 2022.', line: 'Senior high school, San Francisco De Sales School, San Pedro, Laguna.' },
+  { years: '2019 to 2020.', line: 'Junior high school, San Pedro Relocation Center National High School, Landayan Campus.' },
+  { years: '2015 to 2016.', line: 'Landayan Elementary School, Landayan, San Pedro, Laguna.' },
 ]
 
 export const navItems: { id: string; label: string; icon: IconName }[] = [

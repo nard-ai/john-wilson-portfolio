@@ -1,4 +1,4 @@
-import { aboutClose, aboutText, timeline } from '../data'
+import { aboutClose, aboutText, contact, resumeFile, timeline } from '../data'
 import { scrollToId } from '../lib/motion'
 
 export function About() {
@@ -8,8 +8,28 @@ export function About() {
       <h2 id="about-title" className="t-section mt-3">
         John Wilson Malate
       </h2>
+      <a
+        href={resumeFile}
+        download="John-Wilson-Malate-Resume.pdf"
+        className="mt-6 inline-flex text-[18px] font-semibold text-link underline-offset-4 hover:underline"
+      >
+        Here's my Resume:
+      </a>
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
-        <p className="max-w-[460px] text-[20px] leading-[1.5] text-strong">{aboutText}</p>
+        <div className="max-w-[460px]">
+          <p className="text-[20px] leading-[1.5] text-strong">{aboutText}</p>
+          <p className="mt-6 text-[15px] leading-[1.5] text-body">{contact.address}</p>
+          <p className="mt-2 text-[15px]">
+            <a className="link" href={contact.phoneHref}>
+              {contact.phone}
+            </a>
+          </p>
+          <p className="mt-1 text-[15px]">
+            <a className="link" href={contact.emailHref}>
+              {contact.email}
+            </a>
+          </p>
+        </div>
         <div>
           <ol className="relative border-l border-line">
             {timeline.map((t) => (
@@ -32,7 +52,10 @@ const footerLinks = [
   { label: 'Services', id: 'work' },
   { label: 'About', id: 'about' },
 ]
-const socialLinks = [{ label: 'Email', href: 'mailto:' }]
+const socialLinks = [
+  { label: 'Email', href: contact.emailHref },
+  { label: 'Phone', href: contact.phoneHref },
+]
 
 export function Footer() {
   return (
