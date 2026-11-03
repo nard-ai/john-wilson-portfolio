@@ -1,0 +1,11 @@
+{
+  "title": "Malate Call Center | Live Phone Support",
+  "description": "Malate Call Center provides inbound, outbound, customer care, and after-hours phone support. A live agent answers in your company name and sends a clear summary after every call.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
