@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { headlines, statements } from '../data'
 import { scrollToId } from '../lib/motion'
 import { Icon } from './Icon'
-import { Cloud, Portrait } from './Portrait'
+import { Portrait } from './Portrait'
 import { Button, cx } from './ui'
 
 function delay(ms: number): CSSProperties {
@@ -107,23 +107,9 @@ function HoldButton() {
 
 function PortraitScene() {
   return (
-    <div className="relative mx-auto flex aspect-[1/1.05] w-[240px] items-end justify-center lg:w-full lg:max-w-[400px]">
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-[6%] h-[55%] overflow-hidden"
-        style={{ maskImage: 'linear-gradient(to right, transparent, #000 18%, #000 82%, transparent)' }}
-      >
-        <Cloud className="anim-drift absolute top-[8%] w-[46%]" style={{ left: '0%', filter: 'drop-shadow(0 6px 14px rgba(31,41,51,0.05))' }} />
-        <Cloud
-          className="anim-drift absolute top-[44%] w-[32%]"
-          style={{ left: '50%', animationDelay: '-9s', filter: 'drop-shadow(0 6px 14px rgba(31,41,51,0.05))' }}
-        />
-      </div>
-      <span
-        aria-hidden="true"
-        className="anim-breathe absolute top-[4%] right-[10%] h-12 w-12 rounded-full border-2 border-[#F0B429] bg-[#FFF3C4] lg:h-14 lg:w-14"
-      />
-      <Portrait className="relative w-[200px] text-ink transition-colors lg:w-[280px]" />
+    <div className="relative mx-auto flex w-full max-w-[340px] items-end justify-center lg:max-w-[380px]">
+      <span aria-hidden="true" className="absolute top-[4%] left-1/2 aspect-square w-[86%] -translate-x-1/2 rounded-full bg-card" />
+      <Portrait className="relative w-full object-contain" />
     </div>
   )
 }
